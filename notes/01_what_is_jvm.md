@@ -29,3 +29,8 @@ Runtime compilation from byte code --> JVM --> JIT --> assembly code
 when we do `java compiledclass`
 
 ![some fun](https://github.com/laaptu/dissecting_java/blob/master/notes/pics/java_to_assembly.png)
+
+
+##### There are different virtual machines for different CPU's and OS. Each JVM can understand the bytecode easily.
+
+
