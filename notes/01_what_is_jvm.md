@@ -23,14 +23,18 @@ Now as an application developer we write the code that is now understood by virt
 As said earlier, the actual machine only understands the assembly language. So the virtaul machine again have to convert the code to assembly language. Further, the virtual machine won't directly understand the Java language, it again needs to be converted into the bytecode which is the language it understands.
 
 
-java code --> compiler ( javac ) --> byte code ( *.class) --> JVM --> JIT ( Just in time compiler) --> assembly code --> CPU
+java code --> compiler ( javac ) --> byte code ( *.class) --> JVM --> JIT ( Just in time compiler) --> machine code --> CPU
 
-Runtime compilation from byte code --> JVM --> JIT --> assembly code
+Runtime compilation from byte code --> JVM --> JIT --> machine code
 when we do `java compiledclass`
 
 ![some fun](https://github.com/laaptu/dissecting_java/blob/master/notes/pics/java_to_assembly.png)
 
+In picture above it should be machine code instead of assembly code.
+
 
 ##### There are different virtual machines for different CPU's and OS. Each JVM can understand the bytecode easily.
+
+
 
 
