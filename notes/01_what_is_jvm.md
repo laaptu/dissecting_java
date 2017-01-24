@@ -32,6 +32,10 @@ when we do `java compiledclass`
 
 In picture above it should be machine code instead of assembly code.
 
+Some more pictorial representation of JVM
+
+![jvm more](https://github.com/laaptu/dissecting_java/blob/master/notes/pics/jvm_more.png)
+
 
 ##### There are different virtual machines for different CPU's and OS. Each JVM can understand the bytecode easily.
 
