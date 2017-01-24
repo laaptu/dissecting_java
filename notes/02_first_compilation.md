@@ -27,3 +27,27 @@ Let's first compile the program i.e *.java -> *.class or converting from java to
 
 ![java run](https://github.com/laaptu/dissecting_java/blob/master/notes/pics/java_run.png)
 
+Here `java jvm.Basic` is actually executing `Basic.class` not `Basic.java`
+
+
+![java class execute](https://github.com/laaptu/dissecting_java/blob/master/notes/pics/java_class_execute.png)
+
+Let us modify our program to run infinitely so we can see what runs in our computer when we do `java`
+
+```
+package jvm;
+public class Basic {
+	public static void main(String[] args) {
+		while(true)
+	     System.out.println("Hello JVM");
+	}
+}
+```
+
+* `javac jvm/Basic.java`
+* `java jvm.Basic`
+* And in our system monitor we are seeing the `java` process which is our JVM
+
+
+![java process](https://github.com/laaptu/dissecting_java/blob/master/notes/pics/java_process.png)
+
