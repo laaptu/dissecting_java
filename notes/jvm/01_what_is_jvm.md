@@ -3,7 +3,7 @@
 * What is needed to run a Java program?
 * A compiler and a JVM (Java Virtual Machine)
 * Where can it be found? An Oracle or Open JDK has JDK (Java Development Kit) where it comes bundle with all those. Download it and install it. In my mac, it gets installed in following location and all those bin files is what needed for it to compile and run the Java program
-![bin_location](https://github.com/laaptu/dissecting_java/blob/master/notes/pics/jdk_bin.png)
+![bin_location](https://github.com/laaptu/dissecting_java/blob/master/notes/pics/jvm/jdk_bin.png)
 
 #### What is virtual machine
 
@@ -28,13 +28,13 @@ java code --> compiler ( javac ) --> byte code ( *.class) --> JVM --> JIT ( Just
 Runtime compilation from byte code --> JVM --> JIT --> machine code
 when we do `java compiledclass`
 
-![some fun](https://github.com/laaptu/dissecting_java/blob/master/notes/pics/java_to_assembly.png)
+![some fun](https://github.com/laaptu/dissecting_java/blob/master/notes/pics/jvm/java_to_assembly.png)
 
 In picture above it should be machine code instead of assembly code.
 
 Some more pictorial representation of JVM
 
-![jvm more](https://github.com/laaptu/dissecting_java/blob/master/notes/pics/jvm_more.png)
+![jvm more](https://github.com/laaptu/dissecting_java/blob/master/notes/pics/jvm/jvm_more.png)
 
 
 ##### There are different virtual machines for different CPU's and OS. Each JVM can understand the bytecode easily.

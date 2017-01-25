@@ -45,13 +45,13 @@ also Emscripten, which compiles LLVM machine code to ECMAScript), machine code t
     ad = add some value
     ```
      
-![assembly](https://github.com/laaptu/dissecting_java/blob/master/notes/pics/assembly.png)  
+![assembly](https://github.com/laaptu/dissecting_java/blob/master/notes/pics/jvm/assembly.png)  
    It is still not so readable in comparison to high level languages.
    
   Q: Why assembly language is used and it's importance? Need to find out.
   
    And there is another software called assembler which converts assembly language to machine code.
-![assembly_to_machine](https://github.com/laaptu/dissecting_java/blob/master/notes/pics/assembly_to_machine_code.png)
+![assembly_to_machine](https://github.com/laaptu/dissecting_java/blob/master/notes/pics/jvm/assembly_to_machine_code.png)
    
     Q: Is assembler a type of compiler then? 
    
@@ -105,10 +105,10 @@ If by producing you are referring to the output, then a compiler produces a targ
 
 * Nowadays compilers are mix of compiler and interpreters. So both the mechanism is used nowadays.
 * In C language the compiler converts the high level lanuage to machine code directly ( say like *.exe) to be executed directly in the machine.
-   ![compile for c ](https://github.com/laaptu/dissecting_java/blob/master/notes/pics/compile_for_c.png)
+   ![compile for c ](https://github.com/laaptu/dissecting_java/blob/master/notes/pics/jvm/compile_for_c.png)
 
 * In Java language, the compiler converts language to bytecode which is understandable by JVM and JVM later converts it to the needed machine code
-   ![compile for java](https://github.com/laaptu/dissecting_java/blob/master/notes/pics/compile_for_java.png)
+   ![compile for java](https://github.com/laaptu/dissecting_java/blob/master/notes/pics/jvm/compile_for_java.png)
 
 #### Some resources
 
