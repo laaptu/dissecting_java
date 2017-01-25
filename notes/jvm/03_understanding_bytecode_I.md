@@ -65,12 +65,39 @@ The output will be
 
 #### Let's keep it simple for now
 ````
-public class Basic {
+public class HelloWorld {
 	public static void main(String[] args) {
-		System.out.println("Hello JVM");
+		System.out.println("Hello World");
+	}
+	private int count;
+	public HelloWorld(int count) {
+		this.count = count;
 	}
 }
 ````
 ![hello world](https://github.com/laaptu/dissecting_java/blob/master/notes/pics/jvm/hello_world.png)
 
-Now to see the actual code or bytecode, we pass a flag -c to javap as `javap -c `
+Now to see the actual code or bytecode, we pass a flag -c to javap as 
+
+ * javac jvm/HelloWorld.java
+ * javap -c jvm.HelloWorld
+
+![javap_with_c](https://github.com/laaptu/dissecting_java/blob/master/notes/pics/jvm/javap_with_c.png)
+
+Let's isolate `main` method for now
+
+![bytecode_main](https://github.com/laaptu/dissecting_java/blob/master/notes/pics/jvm/bytecode_main.png)
+
+![javap_with_c](https://github.com/laaptu/dissecting_java/blob/master/notes/pics/jvm/bytecode_main_detail.png)
+
+#### Understanding the bytecode little
+
+* gets the static method of PrintStream
+* loads the string value
+* invokes the static method with value
+* return
+
+4 codes for 1 line of `System.out.println()`. Awesome
+
+In the next article, let us analyze how JVM eats these codes and does necessary optimization
+ 
